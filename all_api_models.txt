@@ -1,0 +1,16 @@
+LITELLM/gpt-4
+LITELLM/gpt-4-turbo
+LITELLM/gpt-4o
+LITELLM/gemini-1.5-pro-preview-0409
+LITELLM/gemini-1.5-pro-preview-0514
+LITELLM/gemini-1.5-flash-preview-0514
+LITELLM/gemini-pro
+LITELLM/mistral-large-latest
+LITELLM/command
+LITELLM/claude-3-opus-20240229
+LITELLM/gpt-3.5-turbo
+LITELLM/claude-2.1
+LITELLM/claude-3-haiku-20240307
+LITELLM/claude-3-sonnet-20240229
+LITELLM/mistral-small-latest
+LITELLM/mistral-medium-latest

@@ -1,0 +1,15 @@
+wandb>=0.13.6
+tenacity>=8.2.3
+ipython>=8.21.0
+boto3>=1.34.58
+tiktoken>=0.6.0
+openai>=1.13.3
+google-cloud-aiplatform>=1.44.0
+einops>=0.7.0
+transformers_stream_generator>=0.0.5
+mamba-ssm>=1.2.0
+causal-conv1d>=1.2.0
+litellm>=1.33.1
+anthropic>=0.21.3
+vllm==0.4.2
+pytest==8.2.1

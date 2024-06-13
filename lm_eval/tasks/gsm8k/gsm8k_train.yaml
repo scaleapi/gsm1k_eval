@@ -1,12 +1,12 @@
 group:
   - math_word_problems
-task: gsm8k
+task: gsm8k_train
 dataset_path: gsm8k
 dataset_name: main
 output_type: generate_until
 training_split: train
 fewshot_split: train
-test_split: test
+test_split: train
 doc_to_text: "Question: {{question}}\nAnswer:"
 doc_to_target: "{{answer}}" #" {{answer.split('### ')[-1].rstrip()}}"
 metric_list:

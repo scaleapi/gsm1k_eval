@@ -9,6 +9,7 @@ from . import (
     optimum_lm,
     textsynth,
     vllm_causallms,
+    litellm_completions,
 )
 
 

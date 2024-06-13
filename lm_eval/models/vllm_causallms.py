@@ -44,7 +44,7 @@ class VLLM(TemplateLM):
         add_bos_token: Optional[bool] = False,
         tensor_parallel_size: int = 1,
         quantization: Optional[str] = None,
-        max_gen_toks: int = 256,
+        max_gen_toks: int = 1000,
         swap_space: int = 4,
         batch_size: Union[str, int] = 1,
         max_batch_size=None,
@@ -123,6 +123,10 @@ class VLLM(TemplateLM):
 
     @property
     def eot_token_id(self):
+
+        if self.tokenizer.eos_token_id is None:
+            self.tokenizer.eos_token_id = self.tokenizer.pad_token_id
+
         # we use EOT because end of *text* is more accurate for what we're doing than end of *sentence*
         return self.tokenizer.eos_token_id
 
