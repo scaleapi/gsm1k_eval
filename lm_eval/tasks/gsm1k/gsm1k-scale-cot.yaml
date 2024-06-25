@@ -1,7 +1,7 @@
 group:
   - chain_of_thought
-task: gsm8k_scale_cot
-dataset_path: hugh-scale/gsm1k_1205_8k_prompt
+task: gsm1k_cot
+dataset_path: ScaleAI/gsm1k_public_50
 output_type: generate_until
 test_split: test
 doc_to_text: "Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?\nA: There are 15 trees originally. Then there were 21 trees after some more were planted. So there must have been 21 - 15 = 6. The answer is 6.\n\n\

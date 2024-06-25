@@ -1,7 +1,7 @@
 group:
   - math_word_problems
-task: gsm8k_scale
-dataset_path: hugh-scale/gsm1k_1205_8k_prompt
+task: gsm1k
+dataset_path: ScaleAI/gsm1k_public_50
 output_type: generate_until
 training_split: train
 fewshot_split: train
