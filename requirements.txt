@@ -11,5 +11,5 @@ mamba-ssm>=1.2.0
 causal-conv1d>=1.2.0
 litellm>=1.33.1
 anthropic>=0.21.3
-vllm==0.4.2
+vllm==0.5.5
 pytest==8.2.1
