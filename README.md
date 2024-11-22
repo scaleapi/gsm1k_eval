@@ -32,3 +32,5 @@ Example for Llama-3-8B-Instruct
 lm_eval --model vllm --model_args pretrained=meta-llama/Meta-Llama-3-8B-Instruct,tensor_parallel_size=8,dtype=auto,gpu_memory_utilization=0.8,data_parallel_size=1,trust_remote_code=True --batch_size auto --tasks gsm8k --seed 0 --gen_kwargs temperature=0.0 --output_path Meta-Llama-3-8B-Instruct_gsm8k_temperature=0.0_results.json --log_samples
 lm_eval --model vllm --model_args pretrained=meta-llama/Meta-Llama-3-8B-Instruct,tensor_parallel_size=8,dtype=auto,gpu_memory_utilization=0.8,data_parallel_size=1,trust_remote_code=True --batch_size auto --tasks gsm1k --seed 0 --gen_kwargs temperature=0.0 --output_path Meta-Llama-3-8B-Instruct_gsm1k_temperature=0.0_results.json --log_samples
 ```
+
+**Note:** due to API changes (latest model API versions changing over time), nondeterminism of API reuslts, and slightly different library versions of the HuggingFace transformers libraries required to run each model, the precise results may not be fully exactly reproducible.
